@@ -1,1 +1,0 @@
-Put the extracted "model_fn1.5" or "model_fn1.7" folder here.
