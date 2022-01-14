@@ -196,7 +196,7 @@ def convert_examples_to_features(
 
         if ex_index < 2:
             logger.info("*** Example ***")
-            logger.info("race_id: {}".format(example.example_id))
+            logger.info("example_id: {}".format(example.example_id))
             for choice_idx, (input_ids, attention_mask, token_type_ids) in enumerate(choices_features):
                 logger.info("choice: {}".format(choice_idx))
                 logger.info("input_ids: {}".format(" ".join(map(str, input_ids))))
