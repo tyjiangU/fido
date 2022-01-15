@@ -147,6 +147,9 @@ def convert_examples_to_features(
         for ending_idx, (context, question, ending) in enumerate(zip(example.contexts, example.questions, example.endings)):
             text_a = context
             text_b = question + " " + ending
+            # Comment out if using cased models
+            text_a = text_a.lower()
+            text_b = text_b.lower()
             # In case text_b is too long
             text_b = ' '.join(text_b.split()[:100])
 
