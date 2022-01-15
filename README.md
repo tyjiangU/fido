@@ -5,7 +5,13 @@ This is the code for our paper [Exploiting Definitions for Frame Identification]
 This project is built on python==3.7.6, torch=1.4.0, transformers==2.9.0.
 
 ## Use Our Pre-trained Models - FIDO
-Download the pre-trained models at: [trained on FrameNet 1.5](https://drive.google.com/file/d/1pts7oNoGyzf89vYZTG8nsBrMu595ZFg6/view?usp=sharing), [trained on FrameNet 1.7](https://drive.google.com/file/d/1m4xeOSyeLxNgdHuOUUhTSwgSXtkNidU-/view?usp=sharing).
+Download the pre-trained models at: [trained on FrameNet 1.5](https://drive.google.com/file/d/1NGDU_bysROH22vh_sa6XHSb10e_edGyE/view?usp=sharing), [trained on FrameNet 1.7](https://drive.google.com/file/d/149LgbwLfTq_uyKhaWRg7ZNme2H25Yihg/view?usp=sharing).
+
+The accuracy of the pre-trained models are:
+|      | dev | test |
+| ---- | --- | ---- |
+|FN 1.5| 92.4| 91.5 |
+|FN 1.7| 92.4| 92.3 |
 
 The file you would like to predict should be "data/fn1.5/test.csv" or "data/fn1.7/test.csv".
 
@@ -18,7 +24,7 @@ For FrameNet 1.5, data files (train.csv, dev.csv and test.csv) should be put und
 
 For FrameNet 1.7, similarly, data files should be put under "data/fn1.7/".
 
-Run train.sh.
+Run train.sh. You should get similar results compared to the table above.
 
 ## Data Format
 id, sentence, lu_name, lu_head_position, lu_defs, frame_names, frame_defs, label <br>
